@@ -1,0 +1,2778 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#"
+     xml:base="https://www.inf.ufrgs.br/phi-group/site/OntoRobot"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:tlo="https://www.inf.ufrgs.br/phi-group/site/ERAS-TLO.owl/tlo#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:NORN="https://www.inf.ufrgs.br/phi-group/site/NORN#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:ERAS-NEP="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/"
+     xmlns:OntoRobot="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#">
+    <owl:Ontology rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot">
+        <owl:imports rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl"/>
+        <owl:imports rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-TLO.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepconstrains_plans_for -->
+
+    <rdf:Description rdf:about="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepconstrains_plans_for">
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoplans_constrained_by"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains -->
+
+    <rdf:Description rdf:about="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains">
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocontained_in"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepfeatures_described_in -->
+
+    <rdf:Description rdf:about="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepfeatures_described_in">
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtodescribes_features_for"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepincludes -->
+
+    <rdf:Description rdf:about="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepincludes">
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoisincluded_in"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by -->
+
+    <rdf:Description rdf:about="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by">
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoimplements"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_current_location -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_current_location">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgent"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_at -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_at">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentAction"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_from -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_from">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSetRoutePlanAction"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_to -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_to">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_get_object -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_get_object">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentAction"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_gives_passage -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_gives_passage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_has_passage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_has_passage -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_has_passage">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_planpath_from -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_planpath_from">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoPathPlanningAgentAction"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_planpath_to -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_planpath_to">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoPathPlanningAgentAction"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_take_object -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_take_object">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_take_object_to -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_take_object_to">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocarry -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocarry">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepRobot"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocarry_to -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocarry_to">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepRobot"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocomposed_of -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocomposed_of">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRoom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocontained_in -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocontained_in"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtodescribes_features_for -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtodescribes_features_for"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoenv_has_object -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoenv_has_object">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtohas_cause -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtohas_cause">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-TLO.owl/tlo#Situation"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-TLO.owl/tlo#Physical"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoimplements -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoimplements"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoisincluded_in -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoisincluded_in"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtolink_room -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtolink_room">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoConnection"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoobject_placed_in -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoobject_placed_in">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoplans_constrained_by -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoplans_constrained_by"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtosituation_description -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtosituation_description"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtosituationplan_description -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtosituationplan_description">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituationPlanRepertoire"/>
+        <rdfs:range rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-TLO.owl/tlo#Description"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtofloor_level -->
+
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtofloor_level">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRoom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtohas_state -->
+
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtohas_state">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>{ opened, closed, broken }</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable -->
+
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_fragile -->
+
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_fragile">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoplanaction_order -->
+
+    <owl:DatatypeProperty rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoplanaction_order">
+        <rdfs:domain rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepPlanAction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>{1,2,3,4,5}</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidDangerAgentPlan -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidDangerAgentPlan">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidDangerPlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidDangerPlanAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidDangerPlanAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepPlanAction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovementAgentAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidHarmAgentAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidHarmAgentAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovementAgentAction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoBed -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoBed">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoCabinets -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoCabinets">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoCarryToAgentAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoCarryToAgentAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentAction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoChair -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoChair">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoConnection -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoConnection">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDangerousSituation -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDangerousSituation">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverAgentPlan -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverAgentPlan">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                        <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                        <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSetRoutePlanAction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSetRoutePlanAction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepPlanAction"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by"/>
+                        <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoCarryToAgentAction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by"/>
+                        <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoTakeObjectAgentAction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDoor -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDoor">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtohas_state"/>
+                        <owl:hasValue>closed</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtohas_state"/>
+                        <owl:hasValue>opened</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoEletro -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoEletro">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoExploreAgentPlan -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoExploreAgentPlan">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoExplorePlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoExplorePlanAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoExplorePlanAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepPlanAction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovementAgentAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+        <rdfs:comment>Add restriction = all Movable are carriable.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovementAgentAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovementAgentAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentAction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-TLO.owl/tlo#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoOffsideSituation -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoOffsideSituation">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoPathPlanningAgentAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoPathPlanningAgentAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentAction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRecalculateRouteAgentPlan -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRecalculateRouteAgentPlan">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSetRoutePlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRobot -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRobot">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepRobot"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRoom -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRoom">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSendAlertAgentAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSendAlertAgentAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentAction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSetRoutePlanAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSetRoutePlanAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepPlanAction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoPathPlanningAgentAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSink -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSink">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituation -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituation">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepSituation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituationPlanRepertoire -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituationPlanRepertoire">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepSituationPlanRepertoire"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSofa -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSofa">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSolveOffsideAgentPlan -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSolveOffsideAgentPlan">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSolveOffsidePlanAction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSolveOffsidePlanAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSolveOffsidePlanAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepPlanAction"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by"/>
+                        <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovementAgentAction"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by"/>
+                        <owl:someValuesFrom rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSendAlertAgentAction"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoStove -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoStove">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoTable -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoTable">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoTakeObjectAgentAction -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoTakeObjectAgentAction">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentAction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoToy -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoToy">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoUtensils -->
+
+    <owl:Class rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoUtensils">
+        <rdfs:subClassOf rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovable"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#alert_agentplan -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#alert_agentplan">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSolveOffsideAgentPlan"/>
+        <ERAS-NEP:nepcontains rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#emmitAlert_planaction"/>
+        <ERAS-NEP:nepsatisfies rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#informTrouble_obligation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#autonomy_ethicalPrinciple -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#autonomy_ethicalPrinciple">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEthicalPrinciple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#avoidCollision_agentplan -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#avoidCollision_agentplan">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidDangerAgentPlan"/>
+        <ERAS-NEP:nepcontains rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#keepDistance_planAction"/>
+        <ERAS-NEP:nepcontains rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stopMoving_planAction"/>
+        <ERAS-NEP:nepsatisfies rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#collision_prohibition"/>
+        <ERAS-NEP:nepsatisfies rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#hurtHuman_prohibition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#avoidFall_agentplan -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#avoidFall_agentplan">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidDangerAgentPlan"/>
+        <ERAS-NEP:nepcontains rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#keepDistance_planAction"/>
+        <ERAS-NEP:nepcontains rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stopMoving_planAction"/>
+        <ERAS-NEP:nepsatisfies rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#fall_prohibition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#ball -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#ball">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoToy"/>
+        <rtois_carriable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rtois_carriable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bathroom -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bathroom">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRoom"/>
+        <rto_has_passage rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bathroom1"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#shower1"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sink1"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#toilet1"/>
+        <rtofloor_level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rtofloor_level>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bathtub_bedroom2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bathtub_bedroom2">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bed_bedroom1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bed_bedroom1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoBed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bed_bedroom2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bed_bedroom2">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoBed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bedroom -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bedroom">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRoom"/>
+        <rto_has_passage rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bedroom1"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bed_bedroom1"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bedroom1"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#wardrobe_bedroom1"/>
+        <rtofloor_level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rtofloor_level>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#blockage_description -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#blockage_description">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-TLO.owl/tlo#Description"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#blockage_planrepertoire -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#blockage_planrepertoire">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituationPlanRepertoire"/>
+        <ERAS-NEP:nepincludes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#alert_agentplan"/>
+        <ERAS-NEP:nepincludes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#moveThrough_agentplan"/>
+        <ERAS-NEP:nepincludes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#recalculateRoute_AgentPlan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#blockage_situation -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#blockage_situation">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoOffsideSituation"/>
+        <ERAS-NEP:nepfeatures_described_in rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#blockage_planrepertoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#breakObject_prohibition -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#breakObject_prohibition">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepProhibition"/>
+        <ERAS-NEP:nepaccommodates rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#nonMaleficence_ethicalPrinciple"/>
+        <ERAS-NEP:nepis_prescribed_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deontological_ethicalTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#cannotCarry_situation -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#cannotCarry_situation">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoOffsideSituation"/>
+        <ERAS-NEP:nepfeatures_described_in rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#cannotcarry_planrepertoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#cannotcarry_planrepertoire -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#cannotcarry_planrepertoire">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituationPlanRepertoire"/>
+        <ERAS-NEP:nepincludes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#alert_agentplan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#carryTo_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#carryTo_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoCarryToAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#chair1_kitchen -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#chair1_kitchen">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoChair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#chair2_kitchen -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#chair2_kitchen">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoChair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#collision_planrepertoire -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#collision_planrepertoire">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituationPlanRepertoire"/>
+        <ERAS-NEP:nepincludes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#alert_agentplan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#collision_prohibition -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#collision_prohibition">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepProhibition"/>
+        <ERAS-NEP:nepaccommodates rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#nonMaleficence_ethicalPrinciple"/>
+        <ERAS-NEP:nepis_prescribed_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deontological_ethicalTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#collision_situation -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#collision_situation">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDangerousSituation"/>
+        <ERAS-NEP:nepfeatures_described_in rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#collision_planrepertoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#corridor1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#corridor1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoConnection"/>
+        <rtolink_room rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#hall"/>
+        <rtolink_room rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#kitchen"/>
+        <rtolink_room rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#living_room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#corridor2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#corridor2">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoConnection"/>
+        <rtolink_room rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliverObject_planAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliverObject_planAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#carryTo_agentAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#takeObject_agentAction"/>
+        <rtoplanaction_order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rtoplanaction_order>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliverObject_situation -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliverObject_situation">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituation"/>
+        <ERAS-NEP:nepfeatures_described_in rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliverobject_planrepertoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliver_agentplan -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliver_agentplan">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverAgentPlan"/>
+        <ERAS-NEP:nepcontains rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliverObject_planAction"/>
+        <ERAS-NEP:nepcontains rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#setRoute_planAction"/>
+        <ERAS-NEP:nepsatisfies rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliver_obligation"/>
+        <rto_take_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#laptop"/>
+        <rto_take_object_to rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bedroom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliver_obligation -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliver_obligation">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepObligation"/>
+        <ERAS-NEP:nepaccommodates rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#autonomy_ethicalPrinciple"/>
+        <ERAS-NEP:nepis_prescribed_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deontological_ethicalTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliverobject_planrepertoire -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliverobject_planrepertoire">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituationPlanRepertoire"/>
+        <ERAS-NEP:nepincludes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliver_agentplan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deontological_ethicalTheory -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deontological_ethicalTheory">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEthicalTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#dodgeObstacle_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#dodgeObstacle_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidHarmAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDoor"/>
+        <rtohas_state>opened</rtohas_state>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door2">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDoor"/>
+        <rtohas_state>opened</rtohas_state>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door3 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door3">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDoor"/>
+        <rtohas_state>opened</rtohas_state>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bathroom1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bathroom1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDoor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bathroom2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bathroom2">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDoor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bedroom1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bedroom1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDoor"/>
+        <rtohas_state>opened</rtohas_state>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bedroom2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door_bedroom2">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDoor"/>
+        <rtohas_state>closed</rtohas_state>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#eminentCollision_situation -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#eminentCollision_situation">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDangerousSituation"/>
+        <ERAS-NEP:nepfeatures_described_in rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#eminentcollision_planrepertoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#eminentFall_situation -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#eminentFall_situation">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDangerousSituation"/>
+        <ERAS-NEP:nepfeatures_described_in rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#eminentfall_planrepertoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#eminentcollision_planrepertoire -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#eminentcollision_planrepertoire">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituationPlanRepertoire"/>
+        <ERAS-NEP:nepincludes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#avoidCollision_agentplan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#eminentfall_planrepertoire -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#eminentfall_planrepertoire">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituationPlanRepertoire"/>
+        <ERAS-NEP:nepincludes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#avoidFall_agentplan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#emmitAlert_planaction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#emmitAlert_planaction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSolveOffsidePlanAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sendMessage_agentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#explore_agentplan -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#explore_agentplan">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoExploreAgentPlan"/>
+        <ERAS-NEP:nepcontains rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#wander_planAction"/>
+        <ERAS-NEP:nepsatisfies rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#idle_permission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#fall_prohibition -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#fall_prohibition">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepProhibition"/>
+        <ERAS-NEP:nepaccommodates rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#nonMaleficence_ethicalPrinciple"/>
+        <ERAS-NEP:nepis_prescribed_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deontological_ethicalTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#glass1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#glass1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoUtensils"/>
+        <rtoobject_placed_in rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#table_kitchen"/>
+        <rtois_carriable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rtois_carriable>
+        <rtois_fragile rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rtois_fragile>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#hall -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#hall">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRoom"/>
+        <rto_has_passage rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door2"/>
+        <rtofloor_level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rtofloor_level>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#house -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#house">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+        <rtocomposed_of rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bedroom"/>
+        <rtocomposed_of rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#hall"/>
+        <rtocomposed_of rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#kitchen"/>
+        <rtocomposed_of rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#living_room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#hurryUp_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#hurryUp_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidHarmAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#hurtHuman_prohibition -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#hurtHuman_prohibition">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepProhibition"/>
+        <ERAS-NEP:nepaccommodates rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#nonMaleficence_ethicalPrinciple"/>
+        <ERAS-NEP:nepis_prescribed_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deontological_ethicalTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#idle_permission -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#idle_permission">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepPermission"/>
+        <ERAS-NEP:nepaccommodates rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#autonomy_ethicalPrinciple"/>
+        <ERAS-NEP:nepis_prescribed_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deontological_ethicalTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#informTrouble_obligation -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#informTrouble_obligation">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepObligation"/>
+        <ERAS-NEP:nepaccommodates rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#autonomy_ethicalPrinciple"/>
+        <ERAS-NEP:nepis_prescribed_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deontological_ethicalTheory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#keepDistance_planAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#keepDistance_planAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidDangerPlanAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#dodgeObstacle_agentAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#hurryUp_agentAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#moveAway_agentAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#slowDown_agentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#kitchen -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#kitchen">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRoom"/>
+        <rto_has_passage rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door1"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#chair1_kitchen"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#chair2_kitchen"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#refrigerator_kitchen"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sink_kitchen"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stove_kitchen"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#table_kitchen"/>
+        <rtofloor_level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rtofloor_level>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#laptop -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#laptop">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoEletro"/>
+        <rtois_carriable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rtois_carriable>
+        <rtois_fragile rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rtois_fragile>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#living_room -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#living_room">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRoom"/>
+        <rto_has_passage rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#door3"/>
+        <rtocomposed_of rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#bathroom"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sofa_livingroom"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#table_livingroom"/>
+        <rtoenv_has_object rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#tv_livingroom"/>
+        <rtofloor_level rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rtofloor_level>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#moveAway_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#moveAway_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidHarmAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#moveObject_planAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#moveObject_planAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSolveOffsidePlanAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#push_agentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#moveThrough_agentplan -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#moveThrough_agentplan">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSolveOffsideAgentPlan"/>
+        <ERAS-NEP:nepcontains rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#moveObject_planAction"/>
+        <ERAS-NEP:nepsatisfies rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliver_obligation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#noRequirements_situation -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#noRequirements_situation">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituation"/>
+        <ERAS-NEP:nepfeatures_described_in rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#norequirements_planrepertoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#nonMaleficence_ethicalPrinciple -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#nonMaleficence_ethicalPrinciple">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEthicalPrinciple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#norequirements_planrepertoire -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#norequirements_planrepertoire">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSituationPlanRepertoire"/>
+        <ERAS-NEP:nepincludes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#explore_agentplan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#pathPlanning_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#pathPlanning_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoPathPlanningAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#plate1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#plate1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoUtensils"/>
+        <rtoobject_placed_in rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#table_kitchen"/>
+        <rtois_carriable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rtois_carriable>
+        <rtois_fragile rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rtois_fragile>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#push_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#push_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovementAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#recalculateRoute_AgentPlan -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#recalculateRoute_AgentPlan">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRecalculateRouteAgentPlan"/>
+        <ERAS-NEP:nepcontains rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#setRoute_planAction"/>
+        <ERAS-NEP:nepsatisfies rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliver_obligation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#recalculate_planAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#recalculate_planAction"/>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#refrigerator_kitchen -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#refrigerator_kitchen">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoEletro"/>
+        <rtois_carriable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rtois_carriable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#robot -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#robot">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoRobot"/>
+        <ERAS-NEP:nepapplies rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliver_agentplan"/>
+        <ERAS-NEP:nepexecutes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliverObject_planAction"/>
+        <ERAS-NEP:nepexecutes rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#setRoute_planAction"/>
+        <ERAS-NEP:nepintends_to_realize rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#deliverObject_situation"/>
+        <rto_current_location rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#living_room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sendMessage_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sendMessage_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSendAlertAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#setRoute_planAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#setRoute_planAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSetRoutePlanAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#pathPlanning_agentAction"/>
+        <rtoplanaction_order rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rtoplanaction_order>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#shower1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#shower1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#shower_bedroom2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#shower_bedroom2">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sink1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sink1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sink_bedroom2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sink_bedroom2">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sink_kitchen -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sink_kitchen">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSink"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#slowDown_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#slowDown_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidHarmAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sofa_livingroom -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#sofa_livingroom">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSofa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stair -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stair">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoConnection"/>
+        <rtolink_room rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#corridor1"/>
+        <rtolink_room rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#corridor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stopMoving_planAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stopMoving_planAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoAvoidDangerPlanAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stop_agentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stop_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stop_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovementAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stove_kitchen -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#stove_kitchen">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoStove"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#table_bedroom1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#table_bedroom1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoTable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#table_kitchen -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#table_kitchen">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoTable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#table_livingroom -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#table_livingroom">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoTable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#takeObject_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#takeObject_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoTakeObjectAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#toilet1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#toilet1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#toilet_bedroom2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#toilet_bedroom2">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoFixed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#tv_livingroom -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#tv_livingroom">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoEletro"/>
+        <rtois_carriable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rtois_carriable>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#walk_agentAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#walk_agentAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoMovementAgentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#wander_planAction -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#wander_planAction">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoExplorePlanAction"/>
+        <ERAS-NEP:nepis_implemented_by rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#walk_agentAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#wardrobe_bedroom1 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#wardrobe_bedroom1">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoCabinets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/phi-group/site/OntoRobot#wardrobe_bedroom2 -->
+
+    <owl:NamedIndividual rdf:about="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#wardrobe_bedroom2">
+        <rdf:type rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoCabinets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#ag">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#obj">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#sit">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#env">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#sitper">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#ap">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#pa">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#nep">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#agt">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#aa">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#pa2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#env1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#env2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#do">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#agt"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepapplies"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#agt"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#ap"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepPlanAction"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepexecutes"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#agt"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoCarryToAgentAction"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl:var#aa"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#obj"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl:var#env"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_at"/>
+                                                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
+                                                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#env"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_has_passage"/>
+                                                                                                                <swrl:argument1 rdf:resource="urn:swrl:var#env"/>
+                                                                                                                <swrl:argument2 rdf:resource="urn:swrl:var#obj"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                                <rdf:first>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtohas_state"/>
+                                                                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#obj"/>
+                                                                                                                        <swrl:argument2>closed</swrl:argument2>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:first>
+                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/neprecognizes"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#agt"/>
+                        <swrl:argument2 rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#blockage_situation"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSetRoutePlanAction"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#pa2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_take_object_to"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl:var#env"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_to"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_to"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#pa2"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#env"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#obj"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_take_object"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#obj"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#obj"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_to"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#env"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoCarryToAgentAction"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_at"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#env1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#env2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoPathPlanningAgentAction"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSetRoutePlanAction"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepis_implemented_by"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#aa"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_from"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl:var#env1"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_to"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#env2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_planpath_from"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#env1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_planpath_from"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#env2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#obj"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#do"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoTakeObjectAgentAction"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_get_object"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#aa"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#do"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverAgentPlan"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#obj"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_take_object"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#obj"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtois_carriable"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#obj"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgent"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoOffsideSituation"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#sit"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/neprecognizes"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#a"/>
+                        <swrl:argument2 rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#blockage_situation"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#env"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_current_location"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#env"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepSituation"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#sit"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/neprecognizes"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#sit"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepSituationPlanRepertoire"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#sitper"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepfeatures_described_in"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#sit"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#sitper"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgentPlan"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepincludes"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#sitper"/>
+                                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#ap"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoSetRoutePlanAction"/>
+                                                                                                <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepcontains"/>
+                                                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#ap"/>
+                                                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_from"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepEnvironment"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#nep"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepexecutes"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object_to"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#env"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocarry_to"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#env"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepAgent"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoObject"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#obj"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtoDeliverPlanAction"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/ERAS-NEP.owl/nepexecutes"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#pa"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rto_deliver_object"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#pa"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl:var#obj"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://www.inf.ufrgs.br/phi-group/site/OntoRobot#rtocarry"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#ag"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#obj"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
